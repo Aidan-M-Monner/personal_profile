@@ -2,10 +2,14 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { NextDirective } from './next.directive';
+import { PrevDirective } from './prev.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NextDirective,
+    PrevDirective
   ],
   imports: [
     BrowserModule
