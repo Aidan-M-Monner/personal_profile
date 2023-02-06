@@ -1,0 +1,14 @@
+<div class="experience-window">
+    <div class="company-logo">
+        <img src="{{job.logo}}">
+    </div>
+    <div class="company-content">
+        <h1> {{job.Title}} </h1>
+        <h3> {{job.Company}} | {{job.Location}} | {{job.Duration}} </h3>
+        <hr>
+        <h3> {{job.Description}} </h3>
+        <ul>
+            <li *ngFor="let Bullet_Points of job.Bullet_Points"> {{Bullet_Points}} </li>
+        </ul>
+    </div>
+</div>

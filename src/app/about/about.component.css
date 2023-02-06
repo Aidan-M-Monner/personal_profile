@@ -1,7 +1,7 @@
 .about-page {
     margin: auto;
     width: 75%;
-    background-color: aquamarine;
+    background-color: #C2FAF9;
     border-radius: 1em
 }
 
@@ -90,4 +90,11 @@
     background-color: rgb(51, 236, 255, 0.5);
     border: none;
     font-weight: bold;
+}
+
+/* About Me Section */
+.about {
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 1.5em;
 }

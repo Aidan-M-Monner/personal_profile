@@ -1,0 +1,24 @@
+.experience-window {
+    margin: auto;
+    width: 80%;
+    background-color: #c2faf9;
+    display: flex;
+}
+
+.company-logo {
+    width: 40%;
+    float: left;
+}
+
+.company-logo img {
+    width: 90%;
+}
+
+.company-content {
+    width: 50%;
+    float: left;
+}
+
+li {
+    font-size: 1.5em;
+}
