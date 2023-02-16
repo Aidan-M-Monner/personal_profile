@@ -1,24 +1,189 @@
-.experience-window {
-    margin: auto;
-    width: 80%;
-    background-color: #c2faf9;
-    display: flex;
-}
-
-.company-logo {
-    width: 40%;
-    float: left;
-}
-
-.company-logo img {
+/* Resume Page */
+.resume-page {
     width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #000;
+    background-color: #fff;
+    margin-bottom: 5%;
+    border-radius: 0.5%;
+    box-shadow: 10px 10px 5px green;
 }
 
-.company-content {
-    width: 50%;
-    float: left;
+@media only screen and (min-width: 1000px) {
+    .title {
+        text-align: center;
+        font-size: 8em;
+    }
 }
 
-li {
-    font-size: 1.5em;
+@media only screen and (max-width: 1000px) {
+    .title {
+        text-align: center;
+        font-size: 4em;
+    }
+}
+
+/* Slider */
+.product {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 0;
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 70%;
+    background-color: #C4C4C4;
+}
+
+.slider-wrap {
+    position: relative;
+    overflow: hidden;
+    height: 16.7em;
+}
+
+.slider-main {
+    position: absolute;
+    width: 200%;
+}
+
+.item {
+    display: inline-block;
+    width: 25em;
+    height: 20em;
+    background: rgb(255, 251, 251);
+    position: relative;
+    margin: 0 12px;
+}
+
+.pic {
+    width: 23em;
+    height: 18em;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.prev {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(58, 58, 63, 0.5);
+    border: none;
+    font-weight: bold;
+}
+
+.next {
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(58, 58, 63, 0.5);
+    border: none;
+    font-weight: bold;
+}
+
+/* Experience Display */
+@media only screen and (min-width: 1000px) {
+    .experience-window {
+        margin-top: 2px;
+        margin: auto;
+        width: 80%;
+        background-color: #ffffff;
+        display: flex;
+        border: 3px solid #000;
+        align-items: center;
+        border-radius: 0.5%;
+    } 
+
+    .company-logo {
+        width: 40%;
+        float: left;
+        align-items: center;
+    }
+
+    .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1em;
+        width: 50%;
+        height: 75%;
+    }
+
+    hr {
+        background-color: blue;
+        height: 1px;
+        border: none;
+    }
+
+    .company-content {
+        width: 50%;
+        float: left; 
+        align-items: center;
+    }
+
+    li {
+        font-size: 1.5em;
+    }
+}
+
+/* Experience Display Phones */
+@media only screen and (max-width: 1000px) {
+    .experience-window {
+        margin-top: 2px;
+        margin: auto;
+        width: 80%;
+        background-color: #FFF;
+        display: block;
+        border: 3px solid #000;
+        align-items: center;
+        border-radius: 0.5%;
+    } 
+    
+    .company-logo {
+        width: 100%;
+        float: none;
+        align-items: center;
+        display: block;
+    }
+    
+    .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1em;
+        width: 50%;
+        height: 75%;
+    }
+    
+    hr {
+        background-color: blue;
+        height: 1px;
+        border: none;
+    }
+    
+    .company-content {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        align-content: center;
+        display: block;
+    }
+    
+    li {
+        font-size: 1.5em;
+    }
 }

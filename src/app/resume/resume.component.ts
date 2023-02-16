@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ResumeComponent {
 
+  // Experiences
   Bremen = {
     Company: 'Bremen Youth Services',
     Title: 'Camp Counselor',
@@ -18,7 +19,9 @@ export class ResumeComponent {
       'Coordinated activities with a group of three other counselors.',
       'Trained preteens to take on counselor roles as part of the Adolescents Becoming Counselors (ABC) Program.',
       'Provided counseling to children during social-emotional development sessions.'
-    ]
+    ],
+    logo: '/assets/logos/bremen.png',
+    color: '#2A85FA'
   }
 
   Aurelios = {
@@ -32,7 +35,9 @@ export class ResumeComponent {
       'Became an example for station cleanliness and proper dishwashing.',
       'Reliable multitasker who could handle both cook responsibilities and general tasks.',
       'Flexible scheduling, would always fill shifts even on short notice.'
-    ]
+    ],
+    logo: '/assets/logos/aurelios.png',
+    color: '#FF2B2B'
   }
 
   Park_District = {
@@ -46,7 +51,9 @@ export class ResumeComponent {
       'Ready and willing to take on longer shifts such as a 7-6, when others are absent.',
       'Designed and planned out two full days of activities for kids.',
       'Fostered good relations between counselors, campers, and parents.'
-    ]
+    ],
+    logo: '/assets/logos/ofpd.png',
+    color: '#78B800'
   }
 
   Acorn = {
@@ -61,7 +68,8 @@ export class ResumeComponent {
       'Reviser, provided feedback for a more understandable manual.',
       'Flexible worker, willing to take on extra shifts.'
     ],
-    logo: 'https://acornlibrary.org/wp-content/themes/acorn-public-library/images/logo.png'
+    logo: '/assets/logos/acorn.png',
+    color: '#6D2A2A'
   }
 
   Trinity = {
@@ -74,8 +82,33 @@ export class ResumeComponent {
       'Researched roughly a hundred HandShake employers a week and accepted/denied requests.',
       'Revised student resumes.',
       'Headed marketing campaigns, set up locations, designed materials and engaged with students.'
-    ]
+    ],
+    logo: '/assets/logos/trinity.png',
+    color: '#1E36D3'
   }
 
+  InMotion = {
+    Company: 'InMotion Hosting',
+    Title: 'Intern',
+    Location: '(Remote)',
+    Duration: 'Aug 2022 - Dec 2022',
+    Description: 'Web hosting and cloud service provider.',
+    Bullet_Points: [
+      'Completed multiple Udemy courses for Git, AngularJS, OOP, and RxJs.',
+      'Produced two frontend fraud report pages within the kubernetes cluster.',
+      'Developed API calls in frontend and REST API endpoints in backend to utilize data from their database.',
+      'Created an algorithm of if statements to score fraud in the backend.',
+      'Fixed coding bugs left by the team.'
+    ],
+    logo: '/assets/logos/imh.png',
+    color: '#BF0202'
+  }
+
+
+  // Experience Load
   job = this.Acorn;
+
+  onClick(imageNameObject: any) {
+    this.job = imageNameObject;
+  }
 }

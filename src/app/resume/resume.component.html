@@ -1,14 +1,58 @@
-<div class="experience-window">
-    <div class="company-logo">
-        <img src="{{job.logo}}">
-    </div>
-    <div class="company-content">
-        <h1> {{job.Title}} </h1>
-        <h3> {{job.Company}} | {{job.Location}} | {{job.Duration}} </h3>
-        <hr>
-        <h3> {{job.Description}} </h3>
-        <ul>
-            <li *ngFor="let Bullet_Points of job.Bullet_Points"> {{Bullet_Points}} </li>
-        </ul>
-    </div>
+<div class="resume-page">
+
+  <h1 class="title"> Work Experience </h1>
+
+  <!-- Scroll For Various Companies -->
+  <div class="experience-selector">
+      <section class="product">
+          <div class="container-fluid">
+            <div class="slider-wrap">
+              <div class="slider-main">
+                <button class="item" (click)="onClick(Bremen)">
+                  <img class="pic" src="{{Bremen.logo}}">
+                </button>
+                <button class="item" (click)="onClick(Aurelios)">
+                  <img class="pic" src="{{Aurelios.logo}}" style="width: 20em;">
+                </button>
+                <button class="item" (click)="onClick(Park_District)">
+                  <img class="pic" src="{{Park_District.logo}}" style="height: 18em;">
+                </button>
+                <button class="item" (click)="onClick(Acorn)">
+                  <img class="pic" src="{{Acorn.logo}}">
+                </button>
+                <button class="item" (click)="onClick(Trinity)">
+                  <img class="pic" src="{{Trinity.logo}}">
+                </button>
+                <button class="item" (click)="onClick(InMotion)">
+                  <img class="pic" src="{{InMotion.logo}}" style="height: 18em;">
+                </button>
+              </div>
+              <div class="button-area">
+                <button type="button" class="prev" appPrev><b><</b></button>
+                <button type="button" class="next" appNext><b>></b></button>
+              </div>
+            </div>
+          </div>
+      </section>
+  </div>
+
+  <br>
+
+  <!-- Form For Job Information -->
+  <div class="experience-window" [style.borderColor]="job.color">
+      <div class="company-logo">
+          <img class="logo" src="{{job.logo}}">
+      </div>
+      <div class="company-content">
+          <h1> {{job.Title}} </h1>
+          <h3> {{job.Company}} | {{job.Location}} | {{job.Duration}} </h3>
+          <hr [style.background-color]="job.color">
+          <h3> {{job.Description}} </h3>
+          <ul>
+              <li *ngFor="let Bullet_Points of job.Bullet_Points"> {{Bullet_Points}} </li>
+          </ul>
+      </div>
+  </div>
+
+  <br><br>
 </div>
