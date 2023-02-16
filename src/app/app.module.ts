@@ -14,6 +14,7 @@ import { ResumeComponent } from './resume/resume.component';
 import { NextDirective } from './resume/next.directive';
 import { PrevDirective } from './resume/prev.directive';
 import { CommonModule } from '@angular/common';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { CommonModule } from '@angular/common';
     AppComponent,
     NextDirective,
     PrevDirective,
-    ResumeComponent
+    ResumeComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
