@@ -16,6 +16,7 @@ import { PrevDirective } from './resume/prev.directive';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { CarouselModule } from './home/carousel/carousel.module';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { CarouselModule } from './home/carousel/carousel.module';
     NextDirective,
     PrevDirective,
     ResumeComponent,
-    HomeComponent
+    HomeComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
