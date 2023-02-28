@@ -17,6 +17,9 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { CarouselModule } from './home/carousel/carousel.module';
 import { AboutComponent } from './about/about.component';
+import { HeartComponent } from './about/heart/heart.component';
+import { LeesComponent } from './about/lees/lees.component';
+import { AureliosComponent } from './about/aurelios/aurelios.component';
 
 
 @NgModule({
@@ -26,7 +29,10 @@ import { AboutComponent } from './about/about.component';
     PrevDirective,
     ResumeComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    HeartComponent,
+    LeesComponent,
+    AureliosComponent
   ],
   imports: [
     BrowserModule,

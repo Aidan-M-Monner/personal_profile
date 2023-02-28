@@ -11,6 +11,11 @@
     box-shadow: 10px 10px 5px green;
 }
 
+.title {
+    margin-bottom: 0%;
+    margin-top: 1%;
+}
+
 @media only screen and (min-width: 1000px) {
     .title {
         text-align: center;
@@ -38,9 +43,9 @@
 }
 
 .slider-wrap {
+    height: 13em;
     position: relative;
     overflow: hidden;
-    height: 16.7em;
 }
 
 .slider-main {
@@ -49,18 +54,25 @@
 }
 
 .item {
-    display: inline-block;
     width: 25em;
-    height: 20em;
+    height: 15.6em;
+    display: inline-block;
     background: rgb(255, 251, 251);
     position: relative;
     margin: 0 12px;
 }
 
-.pic {
-    width: 23em;
-    height: 18em;
+.item img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 14em;
+    width: 14em;
 }
+
 
 .text {
     position: absolute;
