@@ -1,3 +1,8 @@
 <div class="about-page">
-    
+    <div class="chapter-container" clickOutside (clickOutside)="clickedOutside()">
+        <div class="chapter-toggle" (click)="toggleMenu()">Medical Condition</div>
+        <div class="chapter" *ngIf="isMenuOpened">
+            <app-heart></app-heart>
+        </div>
+    </div>
 </div>

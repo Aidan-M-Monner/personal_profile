@@ -10,3 +10,20 @@
     border-radius: 0.5%;
     box-shadow: 10px 10px 5px green;
 }
+
+/* Toggle */
+.chapter-container {
+    width: 200px;
+    background: #04aa6d;
+    font-size: 20px;
+}
+
+.chapter-toggle {
+    padding: 10px;
+}
+
+.chapter {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+}
