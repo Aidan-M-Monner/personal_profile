@@ -1,0 +1,49 @@
+.film_page {
+    display: flex;
+    justify-content: center;
+}
+
+.screen {
+    color: white;
+    background-color: #000000;
+    padding-top: 10px;
+}
+
+.header {
+    color: white;
+    background-color: #000000;
+    padding-left: 2.5%;
+    padding-top: 10px;
+}
+
+mat-card {
+    width: 95%;
+    background-color: #DFFFFF;
+}
+
+ img {
+    height: 450px;
+    width: 300px;
+ }
+
+.layout {
+    display: flex;
+}
+
+.information {
+    width: 50%;
+}
+
+.image {
+    background-color: #00044E;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.fail {
+    background-color: rgb(37, 150, 190);
+    font-size: 15px;
+}

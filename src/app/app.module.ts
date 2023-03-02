@@ -21,6 +21,12 @@ import { HeartComponent } from './about/heart/heart.component';
 import { LeesComponent } from './about/lees/lees.component';
 import { AureliosComponent } from './about/aurelios/aurelios.component';
 
+import { AngularComponent } from './angular-project/angular.component';
+import { PeopleComponent } from './angular-project/people-table/people-table.component';
+import { FilmComponent } from './angular-project/film-table/film-table.component';
+import { UserViewComponent } from './angular-project/people-table/user-view/user-view.component';
+import { FilmViewComponent } from './angular-project/film-table/film-view/film-view.component';
+
 
 @NgModule({
   declarations: [
@@ -33,7 +39,12 @@ import { AureliosComponent } from './about/aurelios/aurelios.component';
     ClickOutsideDirective,
     HeartComponent,
     LeesComponent,
-    AureliosComponent
+    AureliosComponent,
+    AngularComponent,
+    PeopleComponent,
+    FilmComponent,
+    UserViewComponent,
+    FilmViewComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +52,7 @@ import { AureliosComponent } from './about/aurelios/aurelios.component';
     CommonModule,
     FormsModule,
     RouterModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
