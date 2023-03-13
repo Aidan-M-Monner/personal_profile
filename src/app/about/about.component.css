@@ -1,3 +1,22 @@
+.title {
+    margin-bottom: 0%;
+    margin-top: 1%;
+}
+
+@media only screen and (min-width: 1000px) {
+    .title {
+        text-align: center;
+        font-size: 8em;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .title {
+        text-align: center;
+        font-size: 4em;
+    }
+}
+
 /* Resume Page */
 .about-page {
     width: 90%;

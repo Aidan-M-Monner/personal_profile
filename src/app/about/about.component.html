@@ -1,22 +1,24 @@
 <div class="about-page">
+    <h1 class="title"> Aidan Monner Story </h1>
     <div class="chapter-container">
         <div class="chapter-toggle" (click)="toggleHeart()">Medical Condition</div>
         <div class="chapter" *ngIf="isHeartOpened">
             <app-heart></app-heart>
         </div>
     </div>
-
+    <br>
+    <div class="chapter-container">
+        <div class="chapter-toggle" (click)="toggleLees()">Lee's Academy</div>
+        <div class="chapter" *ngIf="isLeesOpened">
+            <app-lees></app-lees>
+        </div>
+    </div>
+    <br>
     <div class="chapter-container">
         <div class="chapter-toggle" (click)="toggleAurelios()">Aurelio's Pizza</div>
         <div class="chapter" *ngIf="isAureliosOpened">
             <app-aurelios></app-aurelios>
         </div>
     </div>
-
-    <div class="chapter-container">
-        <div class="chapter-toggle" (click)="toggleLees()">Aurelio's Pizza</div>
-        <div class="chapter" *ngIf="isLeesOpened">
-            <app-lees></app-lees>
-        </div>
-    </div>
+    <br>
 </div>
