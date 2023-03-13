@@ -16,7 +16,7 @@ import { HomeComponent } from './home/home.component';
 import { CarouselModule } from './home/carousel/carousel.module';
 
 import { AboutComponent } from './about/about.component';
-import { ClickOutsideDirective } from './about/clickOutside.directive';
+
 import { HeartComponent } from './about/heart/heart.component';
 import { LeesComponent } from './about/lees/lees.component';
 import { AureliosComponent } from './about/aurelios/aurelios.component';
@@ -30,7 +30,6 @@ import { AureliosComponent } from './about/aurelios/aurelios.component';
     ResumeComponent,
     HomeComponent,
     AboutComponent,
-    ClickOutsideDirective,
     HeartComponent,
     LeesComponent,
     AureliosComponent

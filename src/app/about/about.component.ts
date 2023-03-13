@@ -6,13 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent {
-  isMenuOpened: boolean = false;
-
-  toggleMenu(): void {
-    this.isMenuOpened = !this.isMenuOpened;
+  
+  // Heart
+  isHeartOpened: boolean = false;
+  toggleHeart(): void {
+    this.isHeartOpened = !this.isHeartOpened;
   }
 
-  clickedOutside(): void {
-    this.isMenuOpened = false;
+  // Lees
+  isLeesOpened: boolean = false;
+  toggleLees(): void {
+    this.isLeesOpened = !this.isLeesOpened;
+  }
+
+  //Aurelios
+  isAureliosOpened: boolean = false;
+  toggleAurelios(): void {
+    this.isAureliosOpened = !this.isAureliosOpened;
   }
 }

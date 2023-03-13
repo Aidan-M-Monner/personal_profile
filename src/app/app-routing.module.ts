@@ -15,6 +15,10 @@ import { AureliosComponent } from './about/aurelios/aurelios.component';
 import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
+
+    // Default Home Page
+    { path: '', component: HomeComponent},
+    
     // About Page Routes
     { path: 'about', component: AboutComponent, children: [
       { path: 'aurelios', component: AureliosComponent},
